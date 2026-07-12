@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0a3d2d">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:image" content="https://iskat.net/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<title>İskat Hesaplama Robotu — Namaz ve Oruç Fidyesi Hesaplama</title>
+<meta name="description" content="Ücretsiz ıskat hesaplama: yaş ve cinsiyete göre namaz-oruç fidyesi, kefaretler ve devir sayısı. 2026 Diyanet fitre bedeliyle otomatik hesap.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="İskât ve Devir">
+<meta property="og:title" content="İskat Hesaplama Robotu — Namaz ve Oruç Fidyesi Hesaplama">
+<meta property="og:description" content="Ücretsiz ıskat hesaplama: yaş ve cinsiyete göre namaz-oruç fidyesi, kefaretler ve devir sayısı. 2026 Diyanet fitre bedeliyle otomatik hesap.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Figtree:wght@300;400;500;600;700&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://iskat.net/hesaplama">
+<meta property="og:url" content="https://iskat.net/hesaplama">
+<link rel="alternate" hreflang="tr" href="https://iskat.net/hesaplama">
+<link rel="alternate" hreflang="en" href="https://iskat.net/en/hesaplama">
+<link rel="alternate" hreflang="es" href="https://iskat.net/es/hesaplama">
+<link rel="alternate" hreflang="ru" href="https://iskat.net/ru/hesaplama">
+<link rel="alternate" hreflang="x-default" href="https://iskat.net/en/hesaplama">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="ust-bar">
+  <div class="ust-ic">
+    <a href="index.html" class="marka">
+      <svg class="marka-yildiz" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e3bd63"/><stop offset="1" stop-color="#b98a2e"/></linearGradient></defs>
+        <mask id="mk1"><rect width="96" height="96" fill="#fff"/><circle cx="53.2" cy="43.8" r="9.8" fill="#000"/></mask>
+        <g fill="none" stroke="url(#lg1)" stroke-width="5.5" stroke-linejoin="round">
+          <rect x="24" y="24" width="48" height="48" rx="3"/>
+          <rect x="24" y="24" width="48" height="48" rx="3" transform="rotate(45 48 48)"/>
+        </g>
+        <circle cx="48" cy="48" r="12" fill="url(#lg1)" mask="url(#mk1)"/>
+        <circle cx="55.6" cy="40.8" r="2.3" fill="url(#lg1)"/>
+      </svg>
+      <span>İskât <em>ve</em> Devir</span>
+    </a>
+    <ul class="menu">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="iskat-nedir.html">İskât Nedir?</a></li>
+      <li><a href="deliller.html">Delilleri</a></li>
+      <li><a href="devir.html">Devir</a></li>
+      <li><a href="sss.html">Soru – Cevap</a></li>
+      <li><a href="hesaplama.html" class="menu-cta aktif">Hesaplama</a></li>
+    </ul>
+    <div class="dil-secici" role="navigation" aria-label="Language">
+      <a href="hesaplama.html" class="dil-aktif" title="Türkçe" aria-label="Türkçe" hreflang="tr"><svg viewBox="0 0 22 16" xmlns="http://www.w3.org/2000/svg"><rect width="22" height="16" fill="#E30A17"/><circle cx="8.8" cy="8" r="4.1" fill="#fff"/><circle cx="9.9" cy="8" r="3.3" fill="#E30A17"/><path fill="#fff" d="M13.2 8l2.9-.94-1.8 2.47V6.47l1.8 2.47z"/></svg></a>
+      <a href="en/hesaplama.html" title="English" aria-label="English" hreflang="en"><svg viewBox="0 0 22 16" xmlns="http://www.w3.org/2000/svg"><rect width="22" height="16" fill="#012169"/><path d="M0 0l22 16M22 0L0 16" stroke="#fff" stroke-width="3.2"/><path d="M0 0l22 16M22 0L0 16" stroke="#C8102E" stroke-width="1.3"/><path d="M11 0v16M0 8h22" stroke="#fff" stroke-width="5.2"/><path d="M11 0v16M0 8h22" stroke="#C8102E" stroke-width="3"/></svg></a>
+      <a href="es/hesaplama.html" title="Español" aria-label="Español" hreflang="es"><svg viewBox="0 0 22 16" xmlns="http://www.w3.org/2000/svg"><rect width="22" height="16" fill="#AA151B"/><rect y="4" width="22" height="8" fill="#F1BF00"/></svg></a>
+      <a href="ru/hesaplama.html" title="Русский" aria-label="Русский" hreflang="ru"><svg viewBox="0 0 22 16" xmlns="http://www.w3.org/2000/svg"><rect width="22" height="16" fill="#fff"/><rect y="5.33" width="22" height="5.34" fill="#0039A6"/><rect y="10.67" width="22" height="5.33" fill="#D52B1E"/></svg></a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero hero-kucuk">
+  <div class="hero-ic">
+    <div class="besmele">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ</div>
+    <h1>İskât Hesaplama Robotu</h1>
+    <p class="hero-alt">Fidye tutarlarını ve devir planını saniyeler içinde hesaplayın</p>
+  </div>
+</header>
+
+<main class="genis">
+
+  <p style="text-align:center; max-width:760px; margin:0 auto 2rem;">Vefat eden yakınınızın bilgilerini girin; robot, kaynak eserdeki usule göre <strong>namaz ve oruç fidyelerini, ihtiyat kefaretlerini, diğer borçları ve devir planını</strong> hesaplasın.</p>
+
+  <!-- ======================= GİRİŞ FORMU ======================= -->
+  <div class="hesap-panel">
+    <h2>1 — Vefat Eden Hakkında Bilgiler</h2>
+    <div class="iki-sutun">
+      <div class="form-grup">
+        <label>Cinsiyeti</label>
+        <div class="radio-satir">
+          <label><input type="radio" name="cinsiyet" value="erkek" checked> Erkek <span style="color:var(--gri)">(12 yıl sabâvet düşülür)</span></label>
+          <label><input type="radio" name="cinsiyet" value="kadin"> Kadın <span style="color:var(--gri)">(9 yıl sabâvet düşülür)</span></label>
+        </div>
+      </div>
+      <div class="form-grup">
+        <label for="yas">Vefat ettiğindeki yaşı</label>
+        <input type="number" id="yas" min="1" max="130" placeholder="Örn: 60">
+        <div class="aciklama">Borç miktarı bilinmiyorsa, ihtiyaten ömrün tamamından çocukluk yılları düşülerek hesap edilir.</div>
+      </div>
+    </div>
+
+    <div class="form-grup">
+      <label>Namaz borcu yılı biliniyor mu?</label>
+      <div class="radio-satir">
+        <label><input type="radio" name="namazBilgi" value="bilinmiyor" checked> Bilinmiyor — yaştan hesaplansın (ihtiyaten evlâ olan budur)</label>
+        <label><input type="radio" name="namazBilgi" value="biliniyor"> Biliniyor — yıl olarak gireceğim</label>
+      </div>
+      <div id="namazYilKutu" style="display:none; margin-top:.7rem;">
+        <input type="number" id="namazYil" min="0" step="0.5" placeholder="Kazaya kalan namaz yılı (örn: 20)">
+      </div>
+    </div>
+
+    <div class="form-grup">
+      <label>Oruç borcu</label>
+      <div class="radio-satir">
+        <label><input type="radio" name="orucBilgi" value="yil" checked> Namaz yılı kadar (her yıl için 30 gün)</label>
+        <label><input type="radio" name="orucBilgi" value="gun"> Gün sayısını gireceğim</label>
+        <label><input type="radio" name="orucBilgi" value="yok"> Oruç borcu hesaba katılmasın</label>
+      </div>
+      <div id="orucGunKutu" style="display:none; margin-top:.7rem;">
+        <input type="number" id="orucGun" min="0" placeholder="Kazaya kalan oruç günü (örn: 300)">
+      </div>
+    </div>
+  </div>
+
+  <div class="hesap-panel">
+    <h2>2 — Fitre (Fıtır Sadakası) Bedeli</h2>
+    <p style="font-size:.94rem">Her bir vakit namazın ve her bir gün orucun fidyesi <strong>bir fıtradır</strong>: 520 dirhem (1666 gram) buğday veya günün rayicine göre kıymeti. Pratik olarak Diyanet'in her yıl ilan ettiği fitre bedeli esas alınabilir.</p>
+    <div class="form-grup">
+      <div class="radio-satir">
+        <label><input type="radio" name="fitreSecim" value="diyanet" checked> Diyanet 2026 bedeli: <strong>240 TL</strong></label>
+        <label><input type="radio" name="fitreSecim" value="ozel"> Kendim gireceğim</label>
+      </div>
+      <div id="fitreOzelKutu" style="display:none; margin-top:.7rem;">
+        <input type="number" id="fitreOzel" min="1" step="0.01" placeholder="Güncel fitre bedeli (TL)">
+        <div class="aciklama">Diyanet'in içinde bulunduğunuz yıl için açıkladığı fitre bedelini veya 1666 gr buğdayın rayiç bedelini girin.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hesap-panel">
+    <h2>3 — Kefaretler ve Diğer Borçlar <span style="font-weight:normal; font-size:.85rem; color:var(--gri)">(isteğe bağlı)</span></h2>
+    <div class="form-grup">
+      <label><input type="checkbox" id="kefaretDahil" checked> İhtiyat kefaretleri dahil edilsin — bir yemin kefareti (10 fıtra) + bir savm kefareti (60 fıtra)</label>
+      <div class="aciklama">Kaynak eserde, devirden sonra ölü için ihtiyaten bir yemin ve bir savm kefaretinin fukaraya dağıtılması tavsiye edilir. Yemin kefareti 10 ayrı fakire birer fıtra olarak verilir.</div>
+    </div>
+    <div class="iki-sutun">
+      <div class="form-grup">
+        <label for="zekatBorc">Kalmış zekât borcu (TL)</label>
+        <input type="number" id="zekatBorc" min="0" step="0.01" placeholder="0">
+      </div>
+      <div class="form-grup">
+        <label for="kurbanBorc">Kalmış kurban borcu (TL)</label>
+        <input type="number" id="kurbanBorc" min="0" step="0.01" placeholder="0">
+      </div>
+      <div class="form-grup">
+        <label for="nezirBorc">Kalmış nezir (adak) borcu (TL)</label>
+        <input type="number" id="nezirBorc" min="0" step="0.01" placeholder="0">
+      </div>
+    </div>
+  </div>
+
+  <div class="hesap-panel">
+    <h2>4 — Devir Planı İçin Eldeki Para <span style="font-weight:normal; font-size:.85rem; color:var(--gri)">(isteğe bağlı)</span></h2>
+    <div class="form-grup">
+      <label for="devirPara">Devir için elde mevcut veya borç alınabilecek para (TL)</label>
+      <input type="number" id="devirPara" min="0" step="0.01" placeholder="Örn: 43200">
+      <div class="aciklama">Boş bırakırsanız yalnızca fidye toplamları hesaplanır. Para ne kadar fazla olursa devir o nispette kısalır.</div>
+    </div>
+    <button class="hesapla-dugme" onclick="hesapla()">Hesapla</button>
+  </div>
+
+  <!-- ======================= SONUÇLAR ======================= -->
+  <div id="sonuc-bolumu">
+    <div class="sonuc-baslik">— Hesap Neticesi —</div>
+    <div class="hesap-panel" id="sonucPanel"></div>
+    <div class="uyari-kutusu">
+      <strong>Hatırlatma:</strong> Bu hesaplama bilgilendirme amaçlıdır ve kaynak eserdeki usule göre yapılmıştır. Devre oturacak kimselerin âkil, bâliğ, sâlih ve fakir olmaları şarttır; ölünün usûl ve fürûu (ana-baba, dede-nine, evlât ve torunları) ile nisaba mâlik zenginler devre oturamaz. Uygulamadan önce ehil bir din âlimine veya müftülüğe danışmanız tavsiye olunur.
+    </div>
+  </div>
+
+<script>
+/* =========================================================
+   İSKÂT HESAPLAMA MOTORU
+   Kaynak: Dürretü'l-Fâhire — İskât-ı Salât ve Devir bölümü
+   Kaideler:
+   - Sabâvet: erkek 12 yıl, kadın 9 yıl düşülür.
+   - Günde (Vitir dahil) 6 vakit; ayda 180, yılda 2160 vakit.
+   - Her vakit namazın ve her gün orucun fidyesi 1 fıtradır.
+   - Yemin kefareti 10 fıtra, savm kefareti 60 fıtra.
+   - Devirde: eldeki para kaç fıtraya muadil ise her turda o
+     kadar vakit namaz iskat edilir (180 fıtra = 1 aylık).
+   ========================================================= */
+
+var DIYANET_FITRE_2026 = 240; // TL — Din İşleri Yüksek Kurulu 2026 kararı
+var GUNLUK_VAKIT = 6, AYLIK_VAKIT = 180, YILLIK_VAKIT = 2160;
+
+function sec(name){ return document.querySelector('input[name="'+name+'"]:checked').value; }
+function sayi(id){ var v = parseFloat(document.getElementById(id).value); return isNaN(v) || v < 0 ? 0 : v; }
+function tl(x){ return x.toLocaleString('tr-TR', {maximumFractionDigits:2}) + ' TL'; }
+function adet(x){ return x.toLocaleString('tr-TR'); }
+
+/* Form görünürlük bağlantıları */
+document.querySelectorAll('input[name="namazBilgi"]').forEach(function(r){
+  r.addEventListener('change', function(){
+    document.getElementById('namazYilKutu').style.display = sec('namazBilgi')==='biliniyor' ? 'block':'none';
+  });
+});
+document.querySelectorAll('input[name="orucBilgi"]').forEach(function(r){
+  r.addEventListener('change', function(){
+    document.getElementById('orucGunKutu').style.display = sec('orucBilgi')==='gun' ? 'block':'none';
+  });
+});
+document.querySelectorAll('input[name="fitreSecim"]').forEach(function(r){
+  r.addEventListener('change', function(){
+    document.getElementById('fitreOzelKutu').style.display = sec('fitreSecim')==='ozel' ? 'block':'none';
+  });
+});
+
+function hesapla(){
+  var out = [];
+  var hata = [];
+
+  /* --- Fitre bedeli --- */
+  var fitre = sec('fitreSecim')==='diyanet' ? DIYANET_FITRE_2026 : sayi('fitreOzel');
+  if (fitre <= 0) hata.push('Lütfen geçerli bir fitre bedeli girin.');
+
+  /* --- Mükellefiyet yılı --- */
+  var cinsiyet = sec('cinsiyet');
+  var sabavet = (cinsiyet==='erkek') ? 12 : 9;
+  var namazYili = 0;
+
+  if (sec('namazBilgi')==='biliniyor'){
+    namazYili = sayi('namazYil');
+    if (namazYili <= 0) hata.push('Kazaya kalan namaz yılını girin.');
+  } else {
+    var yas = sayi('yas');
+    if (yas <= 0) { hata.push('Vefat yaşını girin.'); }
+    else if (yas <= sabavet) {
+      hata.push('Girilen yaş sabâvet (çocukluk) çağı içindedir: ' + (cinsiyet==='erkek'?'erkekte 12':'kadında 9') +
+        ' yaşından küçük vefat edenler mükellef olmadığından ıskat ve devir gerekmez.');
+    } else {
+      namazYili = yas - sabavet;
+    }
+  }
+
+  if (hata.length){
+    goster('<div class="uyari-kutusu"><strong>Eksik / hatalı bilgi:</strong><ul class="madde" style="margin-top:.5rem">' +
+      hata.map(function(h){return '<li>'+h+'</li>';}).join('') + '</ul></div>');
+    return;
+  }
+
+  /* --- Namaz fidyesi --- */
+  var toplamVakit = Math.round(namazYili * YILLIK_VAKIT);
+  var namazFitra  = toplamVakit;                 // her vakit = 1 fıtra
+  var namazTL     = namazFitra * fitre;
+
+  /* --- Oruç fidyesi --- */
+  var orucGun = 0, orucSecim = sec('orucBilgi');
+  if (orucSecim==='yil') orucGun = Math.round(namazYili * 30);
+  else if (orucSecim==='gun') orucGun = Math.round(sayi('orucGun'));
+  var orucTL = orucGun * fitre;
+
+  /* --- Kefaretler --- */
+  var kefaretDahil = document.getElementById('kefaretDahil').checked;
+  var yeminFitra = kefaretDahil ? 10 : 0;
+  var savmFitra  = kefaretDahil ? 60 : 0;
+  var kefaretTL  = (yeminFitra + savmFitra) * fitre;
+
+  /* --- Diğer borçlar --- */
+  var zekat = sayi('zekatBorc'), kurban = sayi('kurbanBorc'), nezir = sayi('nezirBorc');
+  var digerTL = zekat + kurban + nezir;
+
+  var genelToplam = namazTL + orucTL + kefaretTL + digerTL;
+
+  /* --- Sonuç tablosu --- */
+  var h = '<h2 style="margin-top:0">Fidye Dökümü</h2><table class="sonuc-tablo">';
+  h += '<tr><th>Mükellefiyet (borç) yılı</th><td>' + adet(namazYili) + ' yıl' +
+       (sec('namazBilgi')==='bilinmiyor' ? ' <span class="rozet">' + adet(sayi('yas')) + ' yaş − ' + sabavet + ' yıl sabâvet</span>' : '') + '</td></tr>';
+  h += '<tr><th>Toplam namaz vakti (Vitir dahil günde 6 vakit)</th><td>' + adet(toplamVakit) + ' vakit</td></tr>';
+  h += '<tr><th>Namaz fidyesi (' + adet(namazFitra) + ' fıtra × ' + tl(fitre) + ')</th><td><strong>' + tl(namazTL) + '</strong></td></tr>';
+  if (orucGun > 0){
+    h += '<tr><th>Oruç borcu</th><td>' + adet(orucGun) + ' gün</td></tr>';
+    h += '<tr><th>Oruç fidyesi (' + adet(orucGun) + ' fıtra × ' + tl(fitre) + ')</th><td><strong>' + tl(orucTL) + '</strong></td></tr>';
+  }
+  if (kefaretDahil){
+    h += '<tr><th>Yemin kefareti (10 fıtra — 10 ayrı fakire birer fıtra)</th><td>' + tl(10*fitre) + '</td></tr>';
+    h += '<tr><th>Savm kefareti (60 fıtra)</th><td>' + tl(60*fitre) + '</td></tr>';
+  }
+  if (zekat  > 0) h += '<tr><th>Kalmış zekât borcu</th><td>' + tl(zekat) + '</td></tr>';
+  if (kurban > 0) h += '<tr><th>Kalmış kurban borcu</th><td>' + tl(kurban) + '</td></tr>';
+  if (nezir  > 0) h += '<tr><th>Kalmış nezir borcu</th><td>' + tl(nezir) + '</td></tr>';
+  h += '<tr class="toplam"><th>GENEL TOPLAM</th><td>' + tl(genelToplam) + '</td></tr>';
+  h += '</table>';
+  h += '<p style="font-size:.9rem; color:var(--gri)">Toplam fıtra adedi: ' + adet(namazFitra + orucGun + yeminFitra + savmFitra) +
+       ' fıtra' + (digerTL>0 ? ' + ' + tl(digerTL) + ' diğer borçlar' : '') + '.</p>';
+
+  /* --- Devir planı --- */
+  var devirPara = sayi('devirPara');
+  if (devirPara > 0){
+    h += '<h2>Devir Planı</h2>';
+
+    if (devirPara >= genelToplam){
+      h += '<div class="bilgi-kutusu"><strong>Devir gerekmez:</strong> Ayrılan para (' + tl(devirPara) +
+           ') borçların tamamına (' + tl(genelToplam) + ') kâfidir. Bu durumda fidyelerin tamamı doğrudan ' +
+           'fakirlere verilir; birçok namaz ve orucun fidyesini bir defada tek bir fakire vermek de caizdir. ' +
+           'Yalnız kefaretlerde bir fakire bir günde bir fıtradan fazla verilemez.</div>';
+    } else {
+      var turFitra = Math.floor(devirPara / fitre);   // her turda iskat edilen fıtra adedi
+      if (turFitra < 1){
+        h += '<div class="uyari-kutusu">Girilen para bir fıtra bedelinden (' + tl(fitre) + ') azdır; bu para ile devir yapılamaz.</div>';
+      } else {
+        var namazTur = Math.ceil(toplamVakit / turFitra);
+        var orucTur  = orucGun  > 0 ? Math.ceil(orucGun / turFitra) : 0;
+        var kefTur   = kefaretDahil ? Math.ceil((yeminFitra + savmFitra) / turFitra) : 0;
+        var digerTur = digerTL > 0 ? Math.ceil(digerTL / devirPara) : 0;
+        var ayKarsilik = turFitra / AYLIK_VAKIT;   // her turun ay karşılığı
+
+        h += '<table class="sonuc-tablo">';
+        h += '<tr><th>Devredilecek para</th><td>' + tl(devirPara) + ' <span class="rozet">' + adet(turFitra) + ' fıtra bedeli</span></td></tr>';
+        h += '<tr><th>Her turda iskat edilen namaz</th><td>' + adet(turFitra) + ' vakit' +
+             (ayKarsilik >= 1 ? ' (yaklaşık ' + (Math.floor(ayKarsilik*10)/10).toLocaleString('tr-TR') + ' aylık)' : '') + '</td></tr>';
+        h += '<tr><th>Namaz borçları için devir sayısı</th><td><strong>' + adet(namazTur) + ' defa</strong></td></tr>';
+        if (orucTur)  h += '<tr><th>Oruç borçları için devir sayısı</th><td><strong>' + adet(orucTur) + ' defa</strong></td></tr>';
+        if (kefTur)   h += '<tr><th>Kefaretler için devir sayısı*</th><td>' + adet(kefTur) + ' defa</td></tr>';
+        if (digerTur) h += '<tr><th>Zekât / kurban / nezir borçları için devir sayısı</th><td>' + adet(digerTur) + ' defa</td></tr>';
+        h += '<tr class="ara-toplam"><th>Toplam devir sayısı</th><td>' + adet(namazTur + orucTur + kefTur + digerTur) + ' defa</td></tr>';
+        h += '</table>';
+        h += '<p style="font-size:.9rem">Bunlara ilâveten en son <strong>bir defa da "küllemâ vecebe ve mâ faraza aleyhi"</strong> ' +
+             '(üzerine vacip ve farz olmuş her ne varsa onun) için devir yapılır; ana-baba, evlât, karı-koca, komşu ve hayvan hakları için de ' +
+             'birkaç defa devredilmesi kaynak eserde tavsiye edilmiştir. Devir yapılırken bir kişi her devirde bir tesbih çekerse sayı kolaylıkla takip edilir.</p>';
+        if (kefTur) h += '<p style="font-size:.86rem; color:var(--gri)">* Kefaretler devirden ayrı olarak fukaraya dağıtılır: yemin kefareti 10 ayrı fakire birer fıtra, savm kefareti 60 fıtra olarak verilir.</p>';
+      }
+    }
+  } else {
+    h += '<div class="bilgi-kutusu"><strong>Devir planı istenmedi.</strong> Ölünün malının üçte biri yukarıdaki genel toplama yetiyorsa fidyeler doğrudan verilir, devre gerek kalmaz. Yetmiyorsa "Devir Planı" bölümüne eldeki parayı yazıp tekrar hesaplayın.</div>';
+  }
+
+  goster(h);
+}
+
+function goster(html){
+  document.getElementById('sonucPanel').innerHTML = html;
+  document.getElementById('sonuc-bolumu').style.display = 'block';
+  document.getElementById('sonuc-bolumu').scrollIntoView({behavior:'smooth'});
+}
+</script>
+</main>
+
+<footer class="site-alt">
+  <div class="ayrac">✦ ❖ ✦</div>
+  <p><strong>İskât ve Devir Bilgi Sitesi</strong> — bilgilendirme amaçlıdır.</p>
+  <p><a href="hesaplama.html">Hesaplama Robotu</a> · <a href="sss.html">Soru – Cevap</a> · <a href="deliller.html">Deliller</a></p>
+  <p><strong>İletişim:</strong> <a href="mailto:bilgi@iskat.net">bilgi@iskat.net</a></p>
+  <p class="kaynakca">Kaynak: Mehmet Esat Dilaveroğlu, Dürretü'l-Fâhire fî beyâni ahkâmi'l-cenâze ve seferi'l-âhire, İstanbul 1964 — Halebî, Merâkı'l-Felâh, Tahtâvî, Dürrü'l-Muhtâr, İbni Âbidîn ve Levâmiu'l-Ukûl'den iktibasla. Fitre bedeli: Diyanet İşleri Başkanlığı Din İşleri Yüksek Kurulu 2026 kararı (240 TL).</p>
+</footer>
+
+</body>
+</html>

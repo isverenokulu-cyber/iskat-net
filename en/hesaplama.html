@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0a3d2d">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:image" content="https://iskat.net/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<title>Isqat Calculator — Fidyah for Missed Prayers and Fasts</title>
+<meta name="description" content="Free isqat calculator: prayer and fasting fidyah by age and gender, expiations (kaffarah) and the number of dawr rounds. Works with any currency.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Isqat &amp; Dawr">
+<meta property="og:title" content="Isqat Calculator — Fidyah for Missed Prayers and Fasts">
+<meta property="og:description" content="Free isqat calculator: prayer and fasting fidyah by age and gender, expiations (kaffarah) and the number of dawr rounds. Works with any currency.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Figtree:wght@300;400;500;600;700&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://iskat.net/en/hesaplama">
+<meta property="og:url" content="https://iskat.net/en/hesaplama">
+<link rel="alternate" hreflang="tr" href="https://iskat.net/hesaplama">
+<link rel="alternate" hreflang="en" href="https://iskat.net/en/hesaplama">
+<link rel="alternate" hreflang="es" href="https://iskat.net/es/hesaplama">
+<link rel="alternate" hreflang="ru" href="https://iskat.net/ru/hesaplama">
+<link rel="alternate" hreflang="x-default" href="https://iskat.net/en/hesaplama">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav class="ust-bar">
+  <div class="ust-ic">
+    <a href="index.html" class="marka">
+      <svg class="marka-yildiz" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs><linearGradient id="lg7" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e3bd63"/><stop offset="1" stop-color="#b98a2e"/></linearGradient></defs>
+        <mask id="mk7"><rect width="96" height="96" fill="#fff"/><circle cx="53.2" cy="43.8" r="9.8" fill="#000"/></mask>
+        <g fill="none" stroke="url(#lg7)" stroke-width="5.5" stroke-linejoin="round">
+          <rect x="24" y="24" width="48" height="48" rx="3"/>
+          <rect x="24" y="24" width="48" height="48" rx="3" transform="rotate(45 48 48)"/>
+        </g>
+        <circle cx="48" cy="48" r="12" fill="url(#lg7)" mask="url(#mk7)"/>
+        <circle cx="55.6" cy="40.8" r="2.3" fill="url(#lg7)"/>
+      </svg>
+      <span>Isqat <em>&amp;</em> Dawr</span>
+    </a>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="iskat-nedir.html">What Is Isqat?</a></li>
+      <li><a href="deliller.html">Evidences</a></li>
+      <li><a href="devir.html">Dawr</a></li>
+      <li><a href="sss.html">Q &amp; A</a></li>
+      <li><a href="hesaplama.html" class="menu-cta aktif">Calculator</a></li>
+    </ul>
+    <div class="dil-secici" role="navigation" aria-label="Language">
+      <a href="../hesaplama.html" title="Türkçe" aria-label="Türkçe" hreflang="tr"><svg viewBox="0 0 22 16" xmlns="http://www.w3.org/2000/svg"><rect width="22" height="16" fill="#E30A17"/><circle cx="8.8" cy="8" r="4.1" fill="#fff"/><circle cx="9.9" cy="8" r="3.3" fill="#E30A17"/><path fill="#fff" d="M13.2 8l2.9-.94-1.8 2.47V6.47l1.8 2.47z"/></svg></a>
+      <a href="hesaplama.html" class="dil-aktif" title="English" aria-label="English" hreflang="en"><svg viewBox="0 0 22 16" xmlns="http://www.w3.org/2000/svg"><rect width="22" height="16" fill="#012169"/><path d="M0 0l22 16M22 0L0 16" stroke="#fff" stroke-width="3.2"/><path d="M0 0l22 16M22 0L0 16" stroke="#C8102E" stroke-width="1.3"/><path d="M11 0v16M0 8h22" stroke="#fff" stroke-width="5.2"/><path d="M11 0v16M0 8h22" stroke="#C8102E" stroke-width="3"/></svg></a>
+      <a href="../es/hesaplama.html" title="Español" aria-label="Español" hreflang="es"><svg viewBox="0 0 22 16" xmlns="http://www.w3.org/2000/svg"><rect width="22" height="16" fill="#AA151B"/><rect y="4" width="22" height="8" fill="#F1BF00"/></svg></a>
+      <a href="../ru/hesaplama.html" title="Русский" aria-label="Русский" hreflang="ru"><svg viewBox="0 0 22 16" xmlns="http://www.w3.org/2000/svg"><rect width="22" height="16" fill="#fff"/><rect y="5.33" width="22" height="5.34" fill="#0039A6"/><rect y="10.67" width="22" height="5.33" fill="#D52B1E"/></svg></a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero hero-kucuk">
+  <div class="hero-ic">
+    <div class="besmele">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ</div>
+    <h1>Isqat Calculator</h1>
+    <p class="hero-alt">Work out the fidyah amounts and the dawr plan in seconds</p>
+  </div>
+</header>
+
+<main class="genis">
+
+  <p style="text-align:center; max-width:760px; margin:0 auto 2rem;">Enter the details of your deceased relative; following the method of the source work, the calculator will determine <strong>the prayer and fasting fidyah, the precautionary expiations, other debts and the dawr plan</strong>.</p>
+
+  <!-- ======================= INPUT FORM ======================= -->
+  <div class="hesap-panel">
+    <h2>1 — Details of the Deceased</h2>
+    <div class="iki-sutun">
+      <div class="form-grup">
+        <label>Gender</label>
+        <div class="radio-satir">
+          <label><input type="radio" name="cinsiyet" value="erkek" checked> Male <span style="color:var(--gri)">(12 years of childhood deducted)</span></label>
+          <label><input type="radio" name="cinsiyet" value="kadin"> Female <span style="color:var(--gri)">(9 years of childhood deducted)</span></label>
+        </div>
+      </div>
+      <div class="form-grup">
+        <label for="yas">Age at death</label>
+        <input type="number" id="yas" min="1" max="130" placeholder="e.g. 60">
+        <div class="aciklama">If the amount of debt is unknown, as a precaution the childhood years are deducted from the whole lifespan and the remainder is reckoned.</div>
+      </div>
+    </div>
+
+    <div class="form-grup">
+      <label>Is the number of years of missed prayers known?</label>
+      <div class="radio-satir">
+        <label><input type="radio" name="namazBilgi" value="bilinmiyor" checked> Unknown — calculate from age (the more prudent and preferable way)</label>
+        <label><input type="radio" name="namazBilgi" value="biliniyor"> Known — I will enter it in years</label>
+      </div>
+      <div id="namazYilKutu" style="display:none; margin-top:.7rem;">
+        <input type="number" id="namazYil" min="0" step="0.5" placeholder="Years of missed prayers (e.g. 20)">
+      </div>
+    </div>
+
+    <div class="form-grup">
+      <label>Fasting debt</label>
+      <div class="radio-satir">
+        <label><input type="radio" name="orucBilgi" value="yil" checked> Same as the prayer years (30 days per year)</label>
+        <label><input type="radio" name="orucBilgi" value="gun"> I will enter the number of days</label>
+        <label><input type="radio" name="orucBilgi" value="yok"> Exclude fasting from the calculation</label>
+      </div>
+      <div id="orucGunKutu" style="display:none; margin-top:.7rem;">
+        <input type="number" id="orucGun" min="0" placeholder="Days of missed fasting (e.g. 300)">
+      </div>
+    </div>
+  </div>
+
+  <div class="hesap-panel">
+    <h2>2 — Fidyah (Sadaqat al-Fitr) Rate</h2>
+    <p style="font-size:.94rem">The fidyah of each prayer and of each day of fasting is <strong>one fitrah</strong>: 520 dirhams (1,666 grams) of wheat, or its value at the current market rate. In practice, the sadaqat al-fitr amount announced each year by your local religious authority may be taken as the basis.</p>
+    <div class="form-grup">
+      <div class="radio-satir">
+        <label><input type="radio" name="fitreSecim" value="diyanet" checked> Turkish Diyanet 2026 rate: <strong>240 TL</strong></label>
+        <label><input type="radio" name="fitreSecim" value="ozel"> I will enter my own rate</label>
+      </div>
+      <div id="fitreOzelKutu" style="display:none; margin-top:.7rem;">
+        <div class="iki-sutun">
+          <div>
+            <input type="number" id="fitreOzel" min="0.01" step="0.01" placeholder="Current fidyah rate (per fitrah)">
+            <div class="aciklama">Enter the sadaqat al-fitr rate announced for the current year in your country, or the market value of 1,666 g of wheat — in your own currency.</div>
+          </div>
+          <div>
+            <input type="text" id="paraBirimi" maxlength="6" value="USD" placeholder="Currency (e.g. USD)">
+            <div class="aciklama">Currency label to show in the results (e.g. USD, EUR, GBP).</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hesap-panel">
+    <h2>3 — Expiations and Other Debts <span style="font-weight:normal; font-size:.85rem; color:var(--gri)">(optional)</span></h2>
+    <div class="form-grup">
+      <label><input type="checkbox" id="kefaretDahil" checked> Include the precautionary expiations — one oath expiation (10 fitrah) + one fasting expiation (60 fitrah)</label>
+      <div class="aciklama">The source work recommends that, after the dawr, one oath (yamin) expiation and one fasting (sawm) expiation be distributed to the poor as a precaution. The oath expiation is given as one fitrah each to 10 different poor persons.</div>
+    </div>
+    <div class="iki-sutun">
+      <div class="form-grup">
+        <label for="zekatBorc">Outstanding zakat debt</label>
+        <input type="number" id="zekatBorc" min="0" step="0.01" placeholder="0">
+      </div>
+      <div class="form-grup">
+        <label for="kurbanBorc">Outstanding qurbani (sacrifice) debt</label>
+        <input type="number" id="kurbanBorc" min="0" step="0.01" placeholder="0">
+      </div>
+      <div class="form-grup">
+        <label for="nezirBorc">Outstanding vow (nadhr) debt</label>
+        <input type="number" id="nezirBorc" min="0" step="0.01" placeholder="0">
+      </div>
+    </div>
+  </div>
+
+  <div class="hesap-panel">
+    <h2>4 — Money Available for the Dawr <span style="font-weight:normal; font-size:.85rem; color:var(--gri)">(optional)</span></h2>
+    <div class="form-grup">
+      <label for="devirPara">Money at hand, or that can be borrowed, for the dawr</label>
+      <input type="number" id="devirPara" min="0" step="0.01" placeholder="e.g. 43200">
+      <div class="aciklama">Leave blank to calculate the fidyah totals only. The more money available, the shorter the dawr becomes.</div>
+    </div>
+    <button class="hesapla-dugme" onclick="hesapla()">Calculate</button>
+  </div>
+
+  <!-- ======================= RESULTS ======================= -->
+  <div id="sonuc-bolumu">
+    <div class="sonuc-baslik">— Result of the Calculation —</div>
+    <div class="hesap-panel" id="sonucPanel"></div>
+    <div class="uyari-kutusu">
+      <strong>Reminder:</strong> This calculation is for informational purposes and follows the method of the source work. Those who sit for the dawr must be sane, adult, upright and poor; the ascendants and descendants of the deceased (parents, grandparents, children and grandchildren) and the wealthy who possess the nisab may not take part. Before putting it into practice, we advise consulting a qualified religious scholar or your local religious authority.
+    </div>
+  </div>
+
+<script>
+/* =========================================================
+   ISQAT CALCULATION ENGINE
+   Source: Durrat al-Fakhirah — chapter on Isqat al-Salat and Dawr
+   Rules:
+   - Childhood deduction: 12 years for a male, 9 for a female.
+   - 6 prayers per day (witr included); 180 per month, 2,160 per year.
+   - The fidyah of each prayer and each fasting day is 1 fitrah.
+   - Oath expiation 10 fitrah, fasting expiation 60 fitrah.
+   - In the dawr: each round discharges as many prayers as the
+     money equals in fitrah (180 fitrah = one month's prayers).
+   ========================================================= */
+
+var DIYANET_FITRE_2026 = 240; // TL — Turkish Diyanet decision for 2026
+var GUNLUK_VAKIT = 6, AYLIK_VAKIT = 180, YILLIK_VAKIT = 2160;
+var PARA = 'TL';
+
+function sec(name){ return document.querySelector('input[name="'+name+'"]:checked').value; }
+function sayi(id){ var v = parseFloat(document.getElementById(id).value); return isNaN(v) || v < 0 ? 0 : v; }
+function tl(x){ return x.toLocaleString('en-US', {maximumFractionDigits:2}) + ' ' + PARA; }
+function adet(x){ return x.toLocaleString('en-US'); }
+
+/* Form visibility */
+document.querySelectorAll('input[name="namazBilgi"]').forEach(function(r){
+  r.addEventListener('change', function(){
+    document.getElementById('namazYilKutu').style.display = sec('namazBilgi')==='biliniyor' ? 'block':'none';
+  });
+});
+document.querySelectorAll('input[name="orucBilgi"]').forEach(function(r){
+  r.addEventListener('change', function(){
+    document.getElementById('orucGunKutu').style.display = sec('orucBilgi')==='gun' ? 'block':'none';
+  });
+});
+document.querySelectorAll('input[name="fitreSecim"]').forEach(function(r){
+  r.addEventListener('change', function(){
+    document.getElementById('fitreOzelKutu').style.display = sec('fitreSecim')==='ozel' ? 'block':'none';
+  });
+});
+
+function hesapla(){
+  var hata = [];
+
+  /* --- Fidyah rate & currency --- */
+  var fitre;
+  if (sec('fitreSecim')==='diyanet'){ fitre = DIYANET_FITRE_2026; PARA = 'TL'; }
+  else {
+    fitre = sayi('fitreOzel');
+    PARA = (document.getElementById('paraBirimi').value.trim() || 'TL').toUpperCase();
+  }
+  if (fitre <= 0) hata.push('Please enter a valid fidyah rate.');
+
+  /* --- Years of liability --- */
+  var cinsiyet = sec('cinsiyet');
+  var sabavet = (cinsiyet==='erkek') ? 12 : 9;
+  var namazYili = 0;
+
+  if (sec('namazBilgi')==='biliniyor'){
+    namazYili = sayi('namazYil');
+    if (namazYili <= 0) hata.push('Please enter the years of missed prayers.');
+  } else {
+    var yas = sayi('yas');
+    if (yas <= 0) { hata.push('Please enter the age at death.'); }
+    else if (yas <= sabavet) {
+      hata.push('The age entered falls within childhood: those who die below the age of ' + (cinsiyet==='erkek'?'12 (males)':'9 (females)') +
+        ' were not legally responsible, so no isqat or dawr is required.');
+    } else {
+      namazYili = yas - sabavet;
+    }
+  }
+
+  if (hata.length){
+    goster('<div class="uyari-kutusu"><strong>Missing / invalid input:</strong><ul class="madde" style="margin-top:.5rem">' +
+      hata.map(function(h){return '<li>'+h+'</li>';}).join('') + '</ul></div>');
+    return;
+  }
+
+  /* --- Prayer fidyah --- */
+  var toplamVakit = Math.round(namazYili * YILLIK_VAKIT);
+  var namazFitra  = toplamVakit;                 // each prayer = 1 fitrah
+  var namazTL     = namazFitra * fitre;
+
+  /* --- Fasting fidyah --- */
+  var orucGun = 0, orucSecim = sec('orucBilgi');
+  if (orucSecim==='yil') orucGun = Math.round(namazYili * 30);
+  else if (orucSecim==='gun') orucGun = Math.round(sayi('orucGun'));
+  var orucTL = orucGun * fitre;
+
+  /* --- Expiations --- */
+  var kefaretDahil = document.getElementById('kefaretDahil').checked;
+  var yeminFitra = kefaretDahil ? 10 : 0;
+  var savmFitra  = kefaretDahil ? 60 : 0;
+  var kefaretTL  = (yeminFitra + savmFitra) * fitre;
+
+  /* --- Other debts --- */
+  var zekat = sayi('zekatBorc'), kurban = sayi('kurbanBorc'), nezir = sayi('nezirBorc');
+  var digerTL = zekat + kurban + nezir;
+
+  var genelToplam = namazTL + orucTL + kefaretTL + digerTL;
+
+  /* --- Results table --- */
+  var h = '<h2 style="margin-top:0">Breakdown of the Fidyah</h2><table class="sonuc-tablo">';
+  h += '<tr><th>Years of liability (debt)</th><td>' + adet(namazYili) + ' years' +
+       (sec('namazBilgi')==='bilinmiyor' ? ' <span class="rozet">age ' + adet(sayi('yas')) + ' − ' + sabavet + ' childhood years</span>' : '') + '</td></tr>';
+  h += '<tr><th>Total prayers (6 per day, witr included)</th><td>' + adet(toplamVakit) + ' prayers</td></tr>';
+  h += '<tr><th>Prayer fidyah (' + adet(namazFitra) + ' fitrah × ' + tl(fitre) + ')</th><td><strong>' + tl(namazTL) + '</strong></td></tr>';
+  if (orucGun > 0){
+    h += '<tr><th>Fasting debt</th><td>' + adet(orucGun) + ' days</td></tr>';
+    h += '<tr><th>Fasting fidyah (' + adet(orucGun) + ' fitrah × ' + tl(fitre) + ')</th><td><strong>' + tl(orucTL) + '</strong></td></tr>';
+  }
+  if (kefaretDahil){
+    h += '<tr><th>Oath expiation (10 fitrah — one each to 10 different poor persons)</th><td>' + tl(10*fitre) + '</td></tr>';
+    h += '<tr><th>Fasting expiation (60 fitrah)</th><td>' + tl(60*fitre) + '</td></tr>';
+  }
+  if (zekat  > 0) h += '<tr><th>Outstanding zakat debt</th><td>' + tl(zekat) + '</td></tr>';
+  if (kurban > 0) h += '<tr><th>Outstanding qurbani debt</th><td>' + tl(kurban) + '</td></tr>';
+  if (nezir  > 0) h += '<tr><th>Outstanding vow debt</th><td>' + tl(nezir) + '</td></tr>';
+  h += '<tr class="toplam"><th>GRAND TOTAL</th><td>' + tl(genelToplam) + '</td></tr>';
+  h += '</table>';
+  h += '<p style="font-size:.9rem; color:var(--gri)">Total number of fitrah: ' + adet(namazFitra + orucGun + yeminFitra + savmFitra) +
+       ' fitrah' + (digerTL>0 ? ' + ' + tl(digerTL) + ' other debts' : '') + '.</p>';
+
+  /* --- Dawr plan --- */
+  var devirPara = sayi('devirPara');
+  if (devirPara > 0){
+    h += '<h2>Dawr Plan</h2>';
+
+    if (devirPara >= genelToplam){
+      h += '<div class="bilgi-kutusu"><strong>No dawr is needed:</strong> the money set aside (' + tl(devirPara) +
+           ') covers the whole of the debts (' + tl(genelToplam) + '). In that case the fidyah is simply given directly to ' +
+           'the poor; it is also permissible to give the fidyah of many prayers and fasts to a single poor person at once. ' +
+           'Only for expiations may no more than one fitrah be given to the same poor person on the same day.</div>';
+    } else {
+      var turFitra = Math.floor(devirPara / fitre);   // fitrah discharged per round
+      if (turFitra < 1){
+        h += '<div class="uyari-kutusu">The money entered is less than one fitrah (' + tl(fitre) + '); the dawr cannot be performed with it.</div>';
+      } else {
+        var namazTur = Math.ceil(toplamVakit / turFitra);
+        var orucTur  = orucGun  > 0 ? Math.ceil(orucGun / turFitra) : 0;
+        var kefTur   = kefaretDahil ? Math.ceil((yeminFitra + savmFitra) / turFitra) : 0;
+        var digerTur = digerTL > 0 ? Math.ceil(digerTL / devirPara) : 0;
+        var ayKarsilik = turFitra / AYLIK_VAKIT;   // months covered per round
+
+        h += '<table class="sonuc-tablo">';
+        h += '<tr><th>Money to be circulated</th><td>' + tl(devirPara) + ' <span class="rozet">equals ' + adet(turFitra) + ' fitrah</span></td></tr>';
+        h += '<tr><th>Prayers discharged per round</th><td>' + adet(turFitra) + ' prayers' +
+             (ayKarsilik >= 1 ? ' (about ' + (Math.floor(ayKarsilik*10)/10).toLocaleString('en-US') + ' months)' : '') + '</td></tr>';
+        h += '<tr><th>Rounds for the prayer debts</th><td><strong>' + adet(namazTur) + ' rounds</strong></td></tr>';
+        if (orucTur)  h += '<tr><th>Rounds for the fasting debts</th><td><strong>' + adet(orucTur) + ' rounds</strong></td></tr>';
+        if (kefTur)   h += '<tr><th>Rounds for the expiations*</th><td>' + adet(kefTur) + ' rounds</td></tr>';
+        if (digerTur) h += '<tr><th>Rounds for zakat / qurbani / vow debts</th><td>' + adet(digerTur) + ' rounds</td></tr>';
+        h += '<tr class="ara-toplam"><th>Total number of rounds</th><td>' + adet(namazTur + orucTur + kefTur + digerTur) + ' rounds</td></tr>';
+        h += '</table>';
+        h += '<p style="font-size:.9rem">In addition to these, <strong>one final round is performed for "kullama wajaba wa ma farada alayhi"</strong> ' +
+             '(whatever ever became wajib or fard upon him); the source work also recommends a few rounds each for the rights of parents, children, ' +
+             'spouses, neighbours and animals. If one person counts on a tasbih at every round, the number is easily kept track of.</p>';
+        if (kefTur) h += '<p style="font-size:.86rem; color:var(--gri)">* The expiations are distributed to the poor separately from the dawr: the oath expiation as one fitrah each to 10 different poor persons, and the fasting expiation as 60 fitrah.</p>';
+      }
+    }
+  } else {
+    h += '<div class="bilgi-kutusu"><strong>No dawr plan was requested.</strong> If one third of the estate of the deceased covers the grand total above, the fidyah is paid directly and no dawr is needed. If it does not, enter the money at hand in the "Dawr" section and calculate again.</div>';
+  }
+
+  goster(h);
+}
+
+function goster(html){
+  document.getElementById('sonucPanel').innerHTML = html;
+  document.getElementById('sonuc-bolumu').style.display = 'block';
+  document.getElementById('sonuc-bolumu').scrollIntoView({behavior:'smooth'});
+}
+</script>
+</main>
+
+<footer class="site-alt">
+  <div class="ayrac">✦ ❖ ✦</div>
+  <p><strong>Isqat &amp; Dawr Information Site</strong> — for informational purposes.</p>
+  <p><a href="hesaplama.html">Isqat Calculator</a> · <a href="sss.html">Q &amp; A</a> · <a href="deliller.html">Evidences</a></p>
+  <p><strong>Contact:</strong> <a href="mailto:bilgi@iskat.net">bilgi@iskat.net</a></p>
+  <p class="kaynakca">Source: Mehmet Esat Dilaveroğlu, Durrat al-Fakhirah fi bayan ahkam al-jana'iz wa safar al-akhirah, Istanbul 1964 — drawing on al-Halabi, Maraqi al-Falah, al-Tahtawi, al-Durr al-Mukhtar, Ibn Abidin and Lawami' al-'Uqul. Fidyah rate: Turkish Diyanet decision for 2026 (240 TL).</p>
+</footer>
+
+</body>
+</html>
